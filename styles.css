@@ -6,39 +6,39 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    font-size: 16px;  /* Set a base font size for the whole page */
+    font-size: 1.6px;  /* Reduced font size by 10 times */
 }
 
 /* Header styling */
 header {
     background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 1.5px;  /* Reduced padding by 10 times */
     text-align: center;
 }
 
 /* Profile Section Styling */
 .profile {
     background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2px;  /* Reduced padding by 10 times */
+    margin: 2px;  /* Reduced margin by 10 times */
+    border-radius: 0.8px;  /* Reduced border-radius by 10 times */
+    box-shadow: 0 0.4px 0.8px rgba(0, 0, 0, 0.1);  /* Reduced box-shadow by 10 times */
 }
 
 .profile h2 {
     text-align: center;
-    font-size: 1.8em;  /* Adjust the size for headings */
+    font-size: 0.18em;  /* Reduced heading size by 10 times */
 }
 
 /* Info Box styling within the Profile Section */
 .infobox {
-    margin-top: 20px;
+    margin-top: 2px;  /* Reduced margin-top by 10 times */
 }
 
 .infobox p {
     line-height: 1.8;
-    font-size: 1em;  /* Keep text readable at a normal size */
+    font-size: 0.1em;  /* Reduced font size by 10 times */
 }
 
 .infobox a {
@@ -49,61 +49,61 @@ header {
 /* Image Gallery Styling */
 .image-gallery {
     background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2px;  /* Reduced padding by 10 times */
+    margin: 2px;  /* Reduced margin by 10 times */
+    border-radius: 0.8px;  /* Reduced border-radius by 10 times */
+    box-shadow: 0 0.4px 0.8px rgba(0, 0, 0, 0.1);  /* Reduced box-shadow by 10 times */
 }
 
 .image-gallery h2 {
     text-align: center;
-    font-size: 1.8em;  /* Consistent heading size */
+    font-size: 0.18em;  /* Reduced heading size by 10 times */
 }
 
 .images {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;  /* Make images wrap on smaller screens */
+    gap: 2px;  /* Reduced gap between images by 10 times */
+    flex-wrap: wrap;
 }
 
 .images img {
-    width: 100%;
-    max-width: 300px;  /* Limit image size to 300px */
+    width: 10%;  /* Reduced width by 10 times */
+    max-width: 30px;  /* Reduced max-width by 10 times */
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.8px;  /* Reduced border-radius by 10 times */
 }
 
 /* Bio Section Styling */
 .bio {
     background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2px;  /* Reduced padding by 10 times */
+    margin: 2px;  /* Reduced margin by 10 times */
+    border-radius: 0.8px;  /* Reduced border-radius by 10 times */
+    box-shadow: 0 0.4px 0.8px rgba(0, 0, 0, 0.1);  /* Reduced box-shadow by 10 times */
 }
 
 .bio h2 {
-    margin-top: 20px;
-    font-size: 1.8em;  /* Heading size */
+    margin-top: 2px;  /* Reduced margin-top by 10 times */
+    font-size: 0.18em;  /* Reduced heading size by 10 times */
 }
 
 .bio p, .bio ul {
-    margin: 15px 0;
+    margin: 1.5px 0;  /* Reduced margin by 10 times */
     line-height: 1.8;
-    font-size: 1em;  /* Maintain a consistent and readable text size */
+    font-size: 0.1em;  /* Reduced font size by 10 times */
 }
 
 .bio ul {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 2px;  /* Reduced margin-left by 10 times */
 }
 
 /* Footer Styling */
 footer {
     background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 1.5px;  /* Reduced padding by 10 times */
     text-align: center;
     position: relative;
     width: 100%;
@@ -112,14 +112,14 @@ footer {
 /* Responsive Design: Make text and layout adjust for smaller screens */
 @media (max-width: 768px) {
     body {
-        font-size: 14px;  /* Slightly smaller font size for mobile */
+        font-size: 1.4px;  /* Slightly smaller font size for mobile, reduced by 10 times */
     }
 
     .images {
-        flex-direction: column;  /* Stack images vertically on small screens */
+        flex-direction: column;
     }
 
     .images img {
-        max-width: 90%;  /* Allow images to take more space */
+        max-width: 9%;  /* Reduced max-width for images on smaller screens */
     }
 }
