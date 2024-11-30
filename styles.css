@@ -5,13 +5,15 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+    font-size: 16px;  /* Set a base font size for the whole page */
 }
 
 /* Header styling */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -26,15 +28,17 @@ header {
 
 .profile h2 {
     text-align: center;
+    font-size: 1.8em;  /* Adjust the size for headings */
 }
 
+/* Info Box styling within the Profile Section */
 .infobox {
     margin-top: 20px;
 }
 
 .infobox p {
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 1em;  /* Keep text readable at a normal size */
 }
 
 .infobox a {
@@ -53,16 +57,19 @@ header {
 
 .image-gallery h2 {
     text-align: center;
+    font-size: 1.8em;  /* Consistent heading size */
 }
 
 .images {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;  /* Make images wrap on smaller screens */
 }
 
 .images img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;  /* Limit image size to 300px */
     height: auto;
     border-radius: 8px;
 }
@@ -78,12 +85,13 @@ header {
 
 .bio h2 {
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 1.8em;  /* Heading size */
 }
 
 .bio p, .bio ul {
     margin: 15px 0;
     line-height: 1.8;
+    font-size: 1em;  /* Maintain a consistent and readable text size */
 }
 
 .bio ul {
@@ -95,9 +103,23 @@ header {
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: 0;
+}
+
+/* Responsive Design: Make text and layout adjust for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;  /* Slightly smaller font size for mobile */
+    }
+
+    .images {
+        flex-direction: column;  /* Stack images vertically on small screens */
+    }
+
+    .images img {
+        max-width: 90%;  /* Allow images to take more space */
+    }
 }
