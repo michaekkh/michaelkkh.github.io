@@ -2,7 +2,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px; /* Added padding around the website */
+    padding: 200px; /* Increased padding around the website (20px * 10) */
     background-color: #fafafa; /* Light background color */
 }
 
@@ -10,9 +10,9 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 50px; /* Increased padding for a more spacious header */
+    padding: 500px; /* Increased padding for a more spacious header (50px * 10) */
     text-align: center;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for a more modern feel */
+    box-shadow: 0 60px 100px rgba(0, 0, 0, 0.2); /* Stronger shadow for a more modern feel */
 }
 
 header h1 {
@@ -25,14 +25,14 @@ header h1 {
 /* Blockquote styles */
 blockquote {
     font-style: italic;
-    color: white; /* Text color for blockquote */
+    color: black; /* Text color for blockquote */
     background-color: white; /* White background for blockquote */
-    border-left: 8px solid #009688; /* Thicker accent color for the quote */
-    margin-left: 40px; /* Increased left margin */
-    padding-left: 25px; /* Increased padding for more space */
-    font-size: 2.2em; /* Much larger font size for the first quote */
-    line-height: 1.6; /* Increased line-height for readability */
-    margin-top: 30px; /* Increased top margin */
+    border-left: 80px solid #009688; /* Thicker accent color for the quote (8px * 10) */
+    margin-left: 400px; /* Increased left margin (40px * 10) */
+    padding-left: 250px; /* Increased padding for more space (25px * 10) */
+    font-size: 22em; /* Much larger font size for the first quote (2.2em * 10) */
+    line-height: 16; /* Increased line-height for readability */
+    margin-top: 300px; /* Increased top margin (30px * 10) */
     text-align: left;
     font-family: 'Georgia', serif; /* Elegant font for quotes */
 }
@@ -40,67 +40,67 @@ blockquote {
 /* Profile section */
 .profile {
     background-color: #f4f4f4;
-    padding: 30px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 300px 200px; /* Increased padding (30px * 10, 20px * 10) */
+    border-radius: 100px; /* Larger border radius (10px * 10) */
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    margin-top: 200px; /* Increased top margin (20px * 10) */
+    margin-bottom: 200px; /* Increased bottom margin (20px * 10) */
 }
 
 .infobox p {
-    margin: 8px 0;
-    font-size: 1.1em;
+    margin: 80px 0; /* Increased margin (8px * 10) */
+    font-size: 11em; /* Increased font size (1.1em * 10) */
 }
 
 /* Image gallery section */
 .image-gallery {
-    padding: 30px 20px;
+    padding: 300px 200px; /* Increased padding (30px * 10, 20px * 10) */
 }
 
 .images {
     display: flex;
-    gap: 20px;
+    gap: 200px; /* Increased gap between images (20px * 10) */
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .images img {
-    max-width: 48%; /* Slightly adjust image width for better alignment */
+    max-width: 480%; /* Slightly adjust image width for better alignment (48% * 10) */
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Modern shadow on images */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    border-radius: 120px; /* Larger border radius (12px * 10) */
+    box-shadow: 0 60px 120px rgba(0, 0, 0, 0.1); /* Modern shadow on images */
+    transition: transform 3s ease, box-shadow 3s ease; /* Smooth hover effect */
 }
 
 .images img:hover {
     transform: scale(1.05); /* Hover zoom effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    box-shadow: 0 100px 200px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 /* Bio section styling */
 .bio p {
-    line-height: 1.8;
-    margin: 15px 0;
-    font-size: 1.1em;
+    line-height: 18; /* Increased line-height (1.8 * 10) */
+    margin: 150px 0; /* Increased margin (15px * 10) */
+    font-size: 11em; /* Increased font size (1.1em * 10) */
     color: #444;
 }
 
 .bio h2 {
-    margin-top: 30px;
+    margin-top: 300px; /* Increased top margin (30px * 10) */
     color: #333;
-    font-size: 2em; /* Larger headers for modern typography */
+    font-size: 20em; /* Larger headers for modern typography (2em * 10) */
     font-weight: bold;
-    border-bottom: 2px solid #009688; /* Accent line below headers */
-    padding-bottom: 10px;
+    border-bottom: 20px solid #009688; /* Accent line below headers (2px * 10) */
+    padding-bottom: 100px; /* Increased padding-bottom (10px * 10) */
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 200px; /* Increased padding (20px * 10) */
     background-color: #333;
     color: white;
-    font-size: 1.1em;
+    font-size: 11em; /* Increased font size (1.1em * 10) */
 }
 
 footer p {
