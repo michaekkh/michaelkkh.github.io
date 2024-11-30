@@ -25,7 +25,7 @@ header h1 {
 /* Blockquote styles */
 blockquote {
     font-style: italic;
-    color: black; /* Text color for blockquote */
+    color: white; /* Text color for blockquote */
     background-color: white; /* White background for blockquote */
     border-left: 8px solid #009688; /* Thicker accent color for the quote */
     margin-left: 40px; /* Increased left margin */
