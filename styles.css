@@ -1,23 +1,18 @@
-/* Resetting margins and padding for all elements */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Setting body and html height to full screen */
+/* Body & Page Setup */
 html, body {
     height: 100%;
     font-family: 'Arial', sans-serif;
-}
-
-/* Body Styling */
-body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
-    margin-bottom: 50px; /* Ensure space for footer */
+    padding: 0 20px;
 }
 
 /* Header Styling */
@@ -27,11 +22,12 @@ header {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 header p {
@@ -62,17 +58,17 @@ header p {
     color: #4CAF50;
 }
 
-/* Image Container for Profile Images */
-.profile-images {
+/* Profile Images */
+.images {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
 }
 
-.profile-images img {
-    width: 100%;
-    max-width: 300px;
+.images img {
+    max-width: 100%;
+    width: 300px;
     border-radius: 8px;
 }
 
@@ -87,4 +83,80 @@ header p {
 
 .bio h2 {
     font-size: 1.8em;
-    
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+.bio blockquote {
+    font-size: 1.3em;
+    color: #888;
+    margin: 10px 0;
+    padding-left: 20px;
+    border-left: 5px solid #4CAF50;
+}
+
+.bio p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.bio ul {
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+.bio ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Links Styling */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .profile h2, .bio h2 {
+        font-size: 1.6em;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .bio blockquote {
+        font-size: 1.2em;
+    }
+
+    .bio p, .bio ul {
+        font-size: 1em;
+    }
+}
