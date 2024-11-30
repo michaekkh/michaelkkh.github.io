@@ -10,13 +10,13 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 30px;
+    padding: 50px; /* Increased padding for a more spacious header */
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern feel */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for a more modern feel */
 }
 
 header h1 {
-    font-size: 3rem; /* Make the title larger */
+    font-size: 5rem; /* Significantly larger title */
     font-weight: bold;
     margin: 0;
 }
@@ -24,15 +24,16 @@ header h1 {
 blockquote {
     font-style: italic;
     color: #555;
-    border-left: 5px solid #009688; /* Accent color for quote */
-    margin-left: 30px;
-    padding-left: 15px;
-    font-size: 1.5em; /* Larger font size for the first quote */
-    line-height: 1.4;
-    margin-top: 20px;
+    border-left: 8px solid #009688; /* Thicker accent color for the quote */
+    margin-left: 40px; /* Increased left margin */
+    padding-left: 25px; /* Increased padding for more space */
+    font-size: 2.2em; /* Much larger font size for the first quote */
+    line-height: 1.6; /* Increased line-height for readability */
+    margin-top: 30px; /* Increased top margin */
     text-align: left;
     font-family: 'Georgia', serif; /* Elegant font for quotes */
 }
+
 
 /* Profile section */
 .profile {
