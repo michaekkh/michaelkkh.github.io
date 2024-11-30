@@ -6,39 +6,39 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    font-size: 1.6px;  /* Reduced font size by 10 times */
+    font-size: 14px;  /* Set a reasonable base font size */
 }
 
 /* Header styling */
 header {
     background-color: #333;
     color: white;
-    padding: 1.5px;  /* Reduced padding by 10 times */
+    padding: 15px;  /* Adjusted padding */
     text-align: center;
 }
 
 /* Profile Section Styling */
 .profile {
     background-color: #fff;
-    padding: 2px;  /* Reduced padding by 10 times */
-    margin: 2px;  /* Reduced margin by 10 times */
-    border-radius: 0.8px;  /* Reduced border-radius by 10 times */
-    box-shadow: 0 0.4px 0.8px rgba(0, 0, 0, 0.1);  /* Reduced box-shadow by 10 times */
+    padding: 20px;  /* Set padding back to normal */
+    margin: 20px;  /* Set margin back to normal */
+    border-radius: 8px;  /* Normal border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Standard box-shadow */
 }
 
 .profile h2 {
     text-align: center;
-    font-size: 0.18em;  /* Reduced heading size by 10 times */
+    font-size: 1.8em;  /* Reasonable heading size */
 }
 
 /* Info Box styling within the Profile Section */
 .infobox {
-    margin-top: 2px;  /* Reduced margin-top by 10 times */
+    margin-top: 20px;  /* Normal margin-top */
 }
 
 .infobox p {
     line-height: 1.8;
-    font-size: 0.1em;  /* Reduced font size by 10 times */
+    font-size: 16px;  /* Normal font size for paragraphs */
 }
 
 .infobox a {
@@ -49,61 +49,60 @@ header {
 /* Image Gallery Styling */
 .image-gallery {
     background-color: #fff;
-    padding: 2px;  /* Reduced padding by 10 times */
-    margin: 2px;  /* Reduced margin by 10 times */
-    border-radius: 0.8px;  /* Reduced border-radius by 10 times */
-    box-shadow: 0 0.4px 0.8px rgba(0, 0, 0, 0.1);  /* Reduced box-shadow by 10 times */
+    padding: 20px;  /* Normal padding */
+    margin: 20px;  /* Normal margin */
+    border-radius: 8px;  /* Normal border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Normal box-shadow */
 }
 
 .image-gallery h2 {
     text-align: center;
-    font-size: 0.18em;  /* Reduced heading size by 10 times */
+    font-size: 1.8em;  /* Reasonable heading size */
 }
 
 .images {
     display: flex;
     justify-content: center;
-    gap: 2px;  /* Reduced gap between images by 10 times */
+    gap: 20px;  /* Normal gap between images */
     flex-wrap: wrap;
 }
 
 .images img {
-    width: 10%;  /* Reduced width by 10 times */
-    max-width: 30px;  /* Reduced max-width by 10 times */
+    width: 300px;  /* Set image width to a reasonable size */
     height: auto;
-    border-radius: 0.8px;  /* Reduced border-radius by 10 times */
+    border-radius: 8px;  /* Normal border-radius */
 }
 
 /* Bio Section Styling */
 .bio {
     background-color: #fff;
-    padding: 2px;  /* Reduced padding by 10 times */
-    margin: 2px;  /* Reduced margin by 10 times */
-    border-radius: 0.8px;  /* Reduced border-radius by 10 times */
-    box-shadow: 0 0.4px 0.8px rgba(0, 0, 0, 0.1);  /* Reduced box-shadow by 10 times */
+    padding: 20px;  /* Normal padding */
+    margin: 20px;  /* Normal margin */
+    border-radius: 8px;  /* Normal border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Normal box-shadow */
 }
 
 .bio h2 {
-    margin-top: 2px;  /* Reduced margin-top by 10 times */
-    font-size: 0.18em;  /* Reduced heading size by 10 times */
+    margin-top: 20px;  /* Normal margin-top */
+    font-size: 22px;  /* Reasonable heading size */
 }
 
 .bio p, .bio ul {
-    margin: 1.5px 0;  /* Reduced margin by 10 times */
+    margin: 15px 0;  /* Normal margin for paragraphs and lists */
     line-height: 1.8;
-    font-size: 0.1em;  /* Reduced font size by 10 times */
+    font-size: 16px;  /* Normal font size for paragraphs */
 }
 
 .bio ul {
     list-style-type: disc;
-    margin-left: 2px;  /* Reduced margin-left by 10 times */
+    margin-left: 20px;  /* Normal margin-left for list items */
 }
 
 /* Footer Styling */
 footer {
     background-color: #333;
     color: white;
-    padding: 1.5px;  /* Reduced padding by 10 times */
+    padding: 15px;  /* Normal padding */
     text-align: center;
     position: relative;
     width: 100%;
@@ -112,14 +111,14 @@ footer {
 /* Responsive Design: Make text and layout adjust for smaller screens */
 @media (max-width: 768px) {
     body {
-        font-size: 1.4px;  /* Slightly smaller font size for mobile, reduced by 10 times */
+        font-size: 14px;  /* Slightly smaller font size for mobile */
     }
 
     .images {
-        flex-direction: column;
+        flex-direction: column;  /* Stack images vertically on small screens */
     }
 
     .images img {
-        max-width: 9%;  /* Reduced max-width for images on smaller screens */
+        max-width: 90%;  /* Allow images to take more space */
     }
 }
