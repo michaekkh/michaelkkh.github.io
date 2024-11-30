@@ -1,69 +1,105 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fafafa; /* Light background color */
 }
 
 /* Header styles */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern feel */
+}
+
+header h1 {
+    font-size: 3rem; /* Make the title larger */
+    font-weight: bold;
+    margin: 0;
 }
 
 blockquote {
     font-style: italic;
-    color: #666;
-    border-left: 4px solid #ccc;
-    margin-left: 20px;
-    padding-left: 10px;
-    font-size: 1.2em;
+    color: #555;
+    border-left: 5px solid #009688; /* Accent color for quote */
+    margin-left: 30px;
+    padding-left: 15px;
+    font-size: 1.5em; /* Larger font size for the first quote */
+    line-height: 1.4;
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Georgia', serif; /* Elegant font for quotes */
 }
 
 /* Profile section */
 .profile {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #f4f4f4;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .infobox p {
-    margin: 5px 0;
+    margin: 8px 0;
+    font-size: 1.1em;
 }
 
 /* Image gallery section */
 .image-gallery {
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .images {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .images img {
-    max-width: 45%;
+    max-width: 48%; /* Slightly adjust image width for better alignment */
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Modern shadow on images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.images img:hover {
+    transform: scale(1.05); /* Hover zoom effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 /* Bio section styling */
 .bio p {
-    line-height: 1.6;
-    margin: 10px 0;
+    line-height: 1.8;
+    margin: 15px 0;
+    font-size: 1.1em;
+    color: #444;
 }
 
 .bio h2 {
-    margin-top: 20px;
+    margin-top: 30px;
     color: #333;
+    font-size: 2em; /* Larger headers for modern typography */
+    font-weight: bold;
+    border-bottom: 2px solid #009688; /* Accent line below headers */
+    padding-bottom: 10px;
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
     color: white;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
 }
