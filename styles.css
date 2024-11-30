@@ -1,8 +1,14 @@
- /* General Reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Ensure full height and no overflow issues */
+html, body {
+    height: 100%;
+    min-height: 100%;
 }
 
 /* Body and Background */
@@ -12,6 +18,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
+    margin-bottom: 50px; /* Ensure space for footer */
 }
 
 /* Header Section */
@@ -33,6 +40,7 @@ header {
 /* Main Section */
 main {
     margin-top: 40px;
+    flex-grow: 1; /* Ensure main content stretches to fill available space */
 }
 
 /* Profile Section */
@@ -67,6 +75,9 @@ footer {
     padding: 10px 0;
     margin-top: 40px;
     border-radius: 8px;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Ensure it spans full width */
 }
 
 footer p {
