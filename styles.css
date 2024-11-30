@@ -2,7 +2,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Added padding around the website */
     background-color: #fafafa; /* Light background color */
 }
 
@@ -19,23 +19,23 @@ header h1 {
     font-size: 10rem; /* Title 10 times larger */
     font-weight: bold;
     margin: 0;
+    color: white; /* Ensures header text is white */
 }
 
-/* Blockquote styling */
+/* Blockquote styles */
 blockquote {
     font-style: italic;
-    color: black; /* Change text color to black */
-    background-color: white; /* White background */
+    color: black; /* Text color for blockquote */
+    background-color: white; /* White background for blockquote */
     border-left: 8px solid #009688; /* Thicker accent color for the quote */
     margin-left: 40px; /* Increased left margin */
-    padding: 25px; /* Added padding for spacing */
+    padding-left: 25px; /* Increased padding for more space */
     font-size: 2.2em; /* Much larger font size for the first quote */
     line-height: 1.6; /* Increased line-height for readability */
     margin-top: 30px; /* Increased top margin */
     text-align: left;
     font-family: 'Georgia', serif; /* Elegant font for quotes */
 }
-
 
 /* Profile section */
 .profile {
