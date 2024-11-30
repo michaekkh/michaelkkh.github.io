@@ -121,4 +121,13 @@ footer {
     .images img {
         max-width: 90%;  /* Allow images to take more space */
     }
+
+    .bio h2, .profile h2, .image-gallery h2 {
+        font-size: 1.5em;  /* Adjust heading size for smaller screens */
+    }
+
+    .infobox p {
+        font-size: 14px;  /* Adjust text size in info box for smaller screens */
+    }
 }
+
