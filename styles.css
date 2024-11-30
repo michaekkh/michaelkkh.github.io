@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,65 +6,127 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    word-wrap: break-word;
 }
 
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #333;
+    margin-bottom: 10px;
 }
 
 blockquote {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-style: italic;
     color: #555;
     margin: 20px auto;
     text-align: center;
     border-left: 4px solid #007bff;
-    padding-left: 10px;
+    padding-left: 15px;
     max-width: 600px;
 }
 
-.profile, .bio {
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Section Styles */
+section {
+    margin: 30px auto;
+    max-width: 900px;
 }
 
 h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 15px;
     color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
 }
 
 ul {
-    margin-left: 20px;
     list-style-type: disc;
+    margin-left: 20px;
 }
 
 ul li {
     margin-bottom: 10px;
 }
 
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Profile Section */
+.profile .infobox {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .infobox p {
+    font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 1rem;
     color: #777;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    blockquote {
+        font-size: 1.4rem;
+    }
+
+    section {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .infobox {
+        padding: 15px;
+    }
 }
