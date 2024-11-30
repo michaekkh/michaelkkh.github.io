@@ -1,61 +1,56 @@
-/* General Reset */
+/* Resetting margins and padding for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensure full height and no overflow issues */
+/* Setting body and html height to full screen */
 html, body {
     height: 100%;
-    min-height: 100%;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Body and Background */
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
     padding: 20px;
     margin-bottom: 50px; /* Ensure space for footer */
 }
 
-/* Header Section */
+/* Header Styling */
 header {
-    text-align: center;
     background-color: #4CAF50;
     color: white;
-    padding: 30px;
+    text-align: center;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Larger Header Title */
-.header-title {
-    font-size: 3.5em; /* Larger font size for the header */
-    line-height: 1.3;
+header h1 {
+    font-size: 3em;
 }
 
-/* Main Section */
-main {
-    margin-top: 40px;
-    flex-grow: 1; /* Ensure main content stretches to fill available space */
+header p {
+    font-size: 1.2em;
 }
 
 /* Profile Section */
 .profile {
-    background-color: #ffffff;
+    background-color: white;
     padding: 20px;
+    margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
 }
 
 .profile h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #4CAF50;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .infobox p {
@@ -64,7 +59,47 @@ main {
 }
 
 .infobox strong {
-    color: #333;
+    color: #4CAF50;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Bio Section */
+.bio {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+.bio blockquote {
+    font-size: 1.3em;
+    color: #888;
+    margin: 10px 0;
+    padding-left: 20px;
+    border-left: 5px solid #4CAF50;
+}
+
+/* List Styling */
+ul {
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 /* Footer Section */
@@ -72,16 +107,12 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px;
     margin-top: 40px;
     border-radius: 8px;
     position: relative;
     bottom: 0;
-    width: 100%; /* Ensure it spans full width */
-}
-
-footer p {
-    font-size: 1em;
+    width: 100%;
 }
 
 /* Link Styling */
@@ -94,13 +125,17 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
-    .images {
-        flex-direction: column;
+    header h1 {
+        font-size: 2.5em;
     }
 
-    .images img {
-        width: 100%;
+    .profile img {
+        max-width: 100%;
+    }
+
+    .bio blockquote {
+        font-size: 1.1em;
     }
 }
